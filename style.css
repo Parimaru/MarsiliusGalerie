@@ -1,11 +1,13 @@
 .backgroundflowers {
     margin-top: 0vw;
+    margin-left: 3%;
+    margin-right: 3%;
     display: grid;
     grid-template-columns: 30vw auto 30vw;
-    grid-template-rows: 150vh 110vh 70vh;
+    grid-template-rows: 190vh 130vh 70vh;
     grid-gap: 6px;
     position: absolute;
-    justify-items: center;
+    justify-items: start;
     width: 100vw;
     z-index: 1;
 }
@@ -21,14 +23,15 @@
 }
 
 body {
-    background-image: linear-gradient(rgba(204, 139, 10, 0.5), blanchedalmond);
+    background-image: linear-gradient(rgba(184, 184, 184, 0.5), blanchedalmond);
 }
 
 header nav {
     display: flex;
     position: absolute;
     width: 100%;
-    justify-content: right;
+    justify-content: center;
+    margin-top: 8vh;
 }
 
 header nav ul {
@@ -37,7 +40,7 @@ header nav ul {
     flex-grow: 0.5;
     justify-content: space-around;
     align-items: center;
-    margin-inline-end: 60px;
+    margin-inline: 10vw;
 }
 
 header nav ul li {
@@ -47,7 +50,7 @@ header nav ul li {
 .beautyline {
     display: flex;
     width: 50vw;
-    margin: 3% auto;
+    margin: 1% auto;
 }
 
 .logo {
@@ -70,7 +73,7 @@ header nav ul li {
 }
 
 .click:hover {
-    background: #f8a91550;
+    background: #ac98a150;
 }
 
 .click:active {
@@ -98,7 +101,7 @@ img.image {
     height: 400px;
     object-fit: cover;
     object-position: 30%;
-    border: 1px solid rgba(179, 119, 46, 0.753);
+    border: 1px solid rgba(163, 155, 145, 0.753);
     border-radius: 10px;
 }
 
@@ -111,15 +114,15 @@ img.image {
 h1 {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-    margin-top: 0;
-    margin-bottom: 6%;
+    margin-top: 4%;
+    margin-bottom: 4%;
 }
 
 .descr {
     width: min(90%, 800px);
     font-size: larger;
     text-align: center;
-    border: 1px solid rgba(179, 119, 46, 0.753);
+    border: 1px solid rgba(163, 155, 145, 0.753);
     border-radius: 10px;
     padding: 2%;
     margin-inline: auto;
@@ -144,4 +147,9 @@ iframe {
 
 footer {
     text-align: center;
+}
+
+#Photo {
+    object-fit: contain;
+    width: 100%;
 }
