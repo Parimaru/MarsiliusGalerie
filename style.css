@@ -1,30 +1,33 @@
 .backgroundflowers {
     margin-top: 0vw;
     display: grid;
-    grid-template-columns: 20vw auto 20vw;
-    grid-template-rows: 50vw 50vw 50vw;
+    grid-template-columns: 30vw auto 30vw;
+    grid-template-rows: 150vh 110vh 70vh;
     grid-gap: 6px;
     position: absolute;
-    justify-items: start;
+    justify-items: center;
     width: 100vw;
+    z-index: 1;
 }
-
-/* Work on grid */
 
 .backgroundflowers img {
     width: 25vw;
 }
 
-html {
+.div-cont {
+    position: relative;
+    z-index: 3;
+    margin-top: 0;
+}
+
+body {
     background-image: linear-gradient(rgba(204, 139, 10, 0.5), blanchedalmond);
-    height: max-content;
 }
 
 header nav {
     display: flex;
     position: absolute;
     width: 100%;
-    height: 10%;
     justify-content: right;
 }
 
@@ -39,6 +42,12 @@ header nav ul {
 
 header nav ul li {
     padding: 1%;
+}
+
+.beautyline {
+    display: flex;
+    width: 50vw;
+    margin: 3% auto;
 }
 
 .logo {
@@ -73,20 +82,20 @@ header nav ul li {
     color: black !important;
 }
 
-main {
+.gallery {
     display: flex;
     justify-content: space-around;
     margin-left: 8%;
     margin-right: 8%;
     margin-top: 1%;
-    margin-bottom: 5%;
+    margin-bottom: 7%;
     flex-wrap: wrap;
 }
 
 img.image {
     box-sizing: border-box;
-    width: 300px;
-    height: 450px;
+    width: 280px;
+    height: 400px;
     object-fit: cover;
     object-position: 30%;
     border: 1px solid rgba(179, 119, 46, 0.753);
@@ -102,8 +111,8 @@ img.image {
 h1 {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-    margin-top: 5%;
-    margin-bottom: 4%;
+    margin-top: 0;
+    margin-bottom: 6%;
 }
 
 .descr {
@@ -118,11 +127,21 @@ h1 {
     margin-bottom: 5%;
 }
 
-/* footer {
-    Center image
-} */
-
 a {
     color: black;
     text-decoration: none;
+}
+
+#Jade {
+    display: flex;
+    margin: 0 auto;
+}
+
+iframe {
+    display: flex;
+    margin: 3% auto;
+}
+
+footer {
+    text-align: center;
 }
