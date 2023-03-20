@@ -1,5 +1,22 @@
+.backgroundflowers {
+    margin-top: 0vw;
+    display: grid;
+    grid-template-columns: 20vw auto 20vw;
+    grid-template-rows: 50vw 50vw 50vw;
+    grid-gap: 6px;
+    position: absolute;
+    justify-items: start;
+    width: 100vw;
+}
+
+/* Work on grid */
+
+.backgroundflowers img {
+    width: 25vw;
+}
+
 html {
-    background: linear-gradient(rgba(204, 139, 10, 0.5), blanchedalmond);
+    background-image: linear-gradient(rgba(204, 139, 10, 0.5), blanchedalmond);
     height: max-content;
 }
 
@@ -20,6 +37,10 @@ header nav ul {
     margin-inline-end: 60px;
 }
 
+header nav ul li {
+    padding: 1%;
+}
+
 .logo {
     box-sizing: border-box;
     width: 200px;
@@ -32,12 +53,24 @@ header nav ul {
 }
 
 .click {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     font-size: larger;
-    opacity: 0.6;
+    opacity: 0.8;
     text-decoration: underline;
-    color: rgb(12, 12, 12);
     border-radius: 5px;
+}
+
+.click:hover {
+    background: #f8a91550;
+}
+
+.click:active {
+    box-shadow: inset 3px 2px 15px -5px #252525;
+}
+
+.click:visited {
+    text-decoration: none;
+    color: black !important;
 }
 
 main {
@@ -50,7 +83,7 @@ main {
     flex-wrap: wrap;
 }
 
-main img {
+img.image {
     box-sizing: border-box;
     width: 300px;
     height: 450px;
@@ -81,16 +114,15 @@ h1 {
     border-radius: 10px;
     padding: 2%;
     margin-inline: auto;
+    margin-top: 2%;
+    margin-bottom: 5%;
 }
 
-.click:hover {
-    background: #f8a91550;
-}
+/* footer {
+    Center image
+} */
 
-.click:active {
-    box-shadow: inset 3px 2px 15px -5px #252525;
-}
-
-.Error {
-    padding: 1rem;
+a {
+    color: black;
+    text-decoration: none;
 }
