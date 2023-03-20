@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .backgroundflowers {
     margin-top: 0vw;
     display: grid;
@@ -7,17 +12,22 @@
     position: absolute;
     justify-items: start;
     width: 100vw;
+    z-index: 1;
 }
-
-/* Work on grid */
 
 .backgroundflowers img {
     width: 25vw;
 }
 
-html {
+.div-cont {
+    position: relative;
+    z-index: 3;
+    margin-top: 0;
+}
+
+body {
     background-image: linear-gradient(rgba(204, 139, 10, 0.5), blanchedalmond);
-    height: max-content;
+    width: 100%;
 }
 
 header nav {
@@ -118,11 +128,12 @@ h1 {
     margin-bottom: 5%;
 }
 
-/* footer {
-    Center image
-} */
-
 a {
     color: black;
     text-decoration: none;
+}
+
+#Jade {
+    display: flex;
+    margin: 0 auto;
 }
